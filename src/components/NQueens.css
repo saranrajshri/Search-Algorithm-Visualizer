@@ -1,0 +1,27 @@
+.grid-column{
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    border:1px solid #000;
+    padding: 10px;
+    margin:1px;
+}
+.grid-row{
+    margin:0px;
+}
+.current-grid{
+    background-color: green;
+}
+.queen-grid{
+    background-image: url('https://www.pinclipart.com/picdir/middle/1-18696_free-vector-portablejim-chess-tile-queen-clip-art.png');
+    background-size: 50px 50px;
+}
+.console{
+    height:300px;
+    overflow: auto;
+    background-color: #1e1e1e !important;
+    color: #fff !important;
+}
+.button{
+    margin-top:20px !important;
+}

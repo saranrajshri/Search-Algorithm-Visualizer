@@ -14,8 +14,17 @@ import "./App.css";
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import NQueens from "./components/NQueens";
 
 const panes = [
+  {
+    menuItem: "N Queen",
+    render: () => (
+      <Tab.Pane>
+        <NQueens />
+      </Tab.Pane>
+    ),
+  },
   {
     menuItem: "Linear Search",
     render: () => (
@@ -49,10 +58,12 @@ const App = () => {
         <center>
           <Header as="h3">
             <FontAwesomeIcon icon={faSearch} className="color-red" />
-            <span className="color-red">
+            {/* <span className="color-red">
               {"     "} Search {"   "}
+            </span> */}
+            <span className="color-blue">
+              {"   "} Algorithm {"  "}{" "}
             </span>
-            <span className="color-blue">Alogrithm {"  "} </span>
             <span className="color-green">Visualizer {"   "}</span>
           </Header>
         </center>
@@ -64,12 +75,12 @@ const App = () => {
 
         <div className="footer">
           <center>
-            <p>
+            {/* <p>
               Made By{" "}
               <a href="https://linkedin.com/in/saranrajshri" target="_blank">
                 Shri Saran Raj
               </a>
-            </p>
+            </p> */}
           </center>
         </div>
       </Container>
