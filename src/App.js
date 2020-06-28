@@ -85,12 +85,12 @@ const App = () => {
 
         <div className="footer">
           <center>
-            {/* <p>
+            <p>
               Made By{" "}
               <a href="https://linkedin.com/in/saranrajshri" target="_blank">
                 Shri Saran Raj
               </a>
-            </p> */}
+            </p>
           </center>
         </div>
       </Container>
