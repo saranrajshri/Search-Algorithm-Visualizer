@@ -15,8 +15,18 @@ import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import NQueens from "./components/NQueens";
+import BFS from "./components/BFS";
+import Fibonacci from "./components/Fibonacci";
 
 const panes = [
+  {
+    menuItem: "Fibonacci",
+    render: () => (
+      <Tab.Pane>
+        <Fibonacci />
+      </Tab.Pane>
+    ),
+  },
   {
     menuItem: "N Queen",
     render: () => (
