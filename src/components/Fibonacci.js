@@ -42,9 +42,9 @@ const Fibonacci = () => {
       array[i] = array[i - 1] + array[i - 2];
       setMessages((messages) => [
         ...messages,
-        `Adding Values at index ${i - 1} and ${i + 1} : ${array[i - 1]} + ${
-          array[i + 1]
-        } = ${array[i]}`,
+        `Adding Values at index ${i - 2} and ${i - 1} : ${array[i - 2]} + ${
+          array[i - 1]
+        } = ${array[i - 1] + array[i - 2]}`,
       ]);
 
       setFirstIndex(i);
